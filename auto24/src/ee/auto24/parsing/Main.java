@@ -70,7 +70,6 @@ public class Main {
                 Elements makeRow = document.select("#usedVehiclesSearchResult > tbody > tr:has(td.make_and_model) > td.make_and_model > a");
                 Elements makePriceRow = document.select("#usedVehiclesSearchResult > tbody > tr.result-row.item-odd > td.price");
 
-
                 makeRow.forEach(Element -> {
 
                     String make = Element.text();

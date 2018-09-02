@@ -5,29 +5,28 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
+
 public class CarFromDocument {
-    private String carUrl;
-    private String urlText;
     private String textToWrite;
 
-
     public CarFromDocument(String carUrl) {
-        this.carUrl = carUrl;
+        Car car = new Car();
+        car.setCarUrl(carUrl);
         try {
             Document document = Jsoup.connect(carUrl).get();
-            String carMake = document.select("#navi-links > a:nth-child(4)").text();
-            String makeModel = document.select("#navi-links > a:nth-child(5)").text();
-            String carColor = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-varvus > td.field > span").text();
-            String privod = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-vedavsild > td.field > span").text();
-            String korobka = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-kaigukast_kaikudega > td.field > span").text();
-            String carYear = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-month_and_year > td.field > span").text();
-            String tipTopliva = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-kytus > td.field > span").text();
-            String objom = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-mootorvoimsus > td.field > span").text();
-            String probeg = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-labisoit > td.field > span").text();
-            String cena = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-hind > td.field > span.value").text();
-            String cena2 = document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-soodushind > td.field > span.value").text();
+            car.setCarMake(document.select("#navi-links > a:nth-child(4)").text());
+            car.setMakeModel(document.select("#navi-links > a:nth-child(5)").text());
+            car.setCarColor(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-varvus > td.field > span").text());
+            car.setPrivod(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-vedavsild > td.field > span").text());
+            car.setKorobka(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-kaigukast_kaikudega > td.field > span").text());
+            car.setCarYear(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-month_and_year > td.field > span").text());
+            car.setTipTopliva(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-kytus > td.field > span").text());
+            car.setObjom(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-mootorvoimsus > td.field > span").text());
+            car.setProbeg(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-labisoit > td.field > span").text());
+            car.setCena(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-hind > td.field > span.value").text());
+            car.setCena2(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-soodushind > td.field > span.value").text());
 
-            textToWrite = carMake + ";" + makeModel + ";" + carColor + ";" + privod + ";" + korobka + ";" + carYear + ";" + tipTopliva + ";" + objom + ";" + probeg + ";" + cena + ";" + cena2 + ";" + carUrl;
+            textToWrite = car.getCarMake() + ";" + car.getMakeModel() + ";" + car.getCarColor() + ";" + car.getPrivod() + ";" + car.getKorobka() + ";" + car.getCarYear() + ";" + car.getTipTopliva() + ";" + car.getObjom() + ";" + car.getProbeg() + ";" + car.getCena() + ";" + car.getCena2() + ";" + carUrl;
             System.out.println(textToWrite);
 
         } catch (IOException e) {
