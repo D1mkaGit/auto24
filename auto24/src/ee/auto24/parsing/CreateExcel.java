@@ -12,7 +12,9 @@ import org.apache.poi.ss.usermodel.Row;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class CreateExcel {
@@ -140,7 +142,8 @@ public class CreateExcel {
             cell.setCellValue(car.getCarUrl());
 
         }
-        File file = new File("auto24.xls");
+        String currentDateForFileName = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
+        File file = new File(currentDateForFileName + "_auto24.xls");
         file.getParentFile().mkdirs();
 
         FileOutputStream outFile = new FileOutputStream(file);
