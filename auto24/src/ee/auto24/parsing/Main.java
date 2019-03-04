@@ -46,19 +46,16 @@ public class Main {
                 int intNumberOfLines = Integer.parseInt(numOfLines.text());
                 String makeRowSelecotor = "#usedVehiclesSearchResult > tbody > tr:has(td.make_and_model) > td.make_and_model > a";
 
-                Elements makeRow = document.select(makeRowSelecotor);
-                Logger.logRow(makeRow);
-
                 if (intNumberOfLines > modifier) {
                     int countOf = intNumberOfLines / modifier;
                     for (int m = 1; m <= countOf; m++) {
                         int startingFrom = modifier * m;
                         String modifiedUrl = url + "&ak=" + startingFrom;
                         document = Jsoup.connect(modifiedUrl).get();
-                        makeRow = document.select(makeRowSelecotor);
-                        Logger.logRow(makeRow);
                     }
                 }
+                Elements makeRow = document.select(makeRowSelecotor);
+                Logger.logRow(makeRow);
             } catch (IOException e) {
                 e.printStackTrace();
             }
