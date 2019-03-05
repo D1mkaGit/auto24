@@ -14,6 +14,7 @@ public class CarFromDocument {
         car.setCarUrl(carUrl);
         try {
             Document document = Jsoup.connect(carUrl).get();
+            /*TODO: if auction add extra child for setCarMake and setMakeModel*/
             car.setCarMake(document.select("#navi-links > a:nth-child(4)").text());
             car.setMakeModel(document.select("#navi-links > a:nth-child(5)").text());
             car.setCarColor(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-varvus > td.field > span").text());
