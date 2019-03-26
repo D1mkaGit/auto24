@@ -1,12 +1,14 @@
 package ee.auto24.parsing;
 
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         //
-        // logCars.createdMakeList();
-        logCars.bmwOnly();
+        logCars.createdMakeList();
+        //logCars.bmwOnly();
 
         //select all available car makes
 

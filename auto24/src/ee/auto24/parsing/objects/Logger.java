@@ -19,9 +19,9 @@ public class Logger {
     public static void logRow(Elements makeRow) {
         makeRow.forEach(Element -> {
             String makeUrl = Element.attr("abs:href");
-            new CarFromDocument(makeUrl);
+            CarFromDocument carFromDocument = new CarFromDocument(makeUrl);
             try {
-                Logger.log(new CarFromDocument(makeUrl).getTextToWrite());
+                Logger.log(carFromDocument.getTextToWrite());
                 Logger.log(System.getProperty("line.separator"));
             } catch (IOException e) {
                 e.printStackTrace();

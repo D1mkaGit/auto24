@@ -14,9 +14,17 @@ public class CarFromDocument {
         car.setCarUrl(carUrl);
         try {
             Document document = Jsoup.connect(carUrl).get();
-            /*TODO: if auction add extra child for setCarMake and setMakeModel*/
-            car.setCarMake(document.select("#navi-links > a:nth-child(4)").text());
-            car.setMakeModel(document.select("#navi-links > a:nth-child(5)").text());
+            String properCarMakeChildElelement = "4";
+            String prperMakeModelChildElement = "5";
+            String oksjon = "";
+            String oksjonText = "Oksjon";
+            if (document.select("tr.field-auction").text().equals(oksjonText)) {
+                properCarMakeChildElelement = "5";
+                prperMakeModelChildElement = "6";
+                oksjon = oksjonText;
+            }
+            car.setCarMake(document.select("#navi-links > a:nth-child(" + properCarMakeChildElelement + ")").text());
+            car.setMakeModel(document.select("#navi-links > a:nth-child(" + prperMakeModelChildElement + ")").text());
             car.setCarColor(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-varvus > td.field > span").text());
             car.setPrivod(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-vedavsild > td.field > span").text());
             car.setKorobka(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-kaigukast_kaikudega > td.field > span").text());
@@ -27,7 +35,7 @@ public class CarFromDocument {
             car.setCena(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-hind > td.field > span.value").text());
             car.setCena2(document.select("body > div.tpl-body > div.tpl-content.have-alt_sidebar > div.data-container > table > tbody > tr.field-soodushind > td.field > span.value").text());
 
-            textToWrite = car.getCarMake() + ";" + car.getMakeModel() + ";" + car.getCarColor() + ";" + car.getPrivod() + ";" + car.getKorobka() + ";" + car.getCarYear() + ";" + car.getTipTopliva() + ";" + car.getObjom() + ";" + car.getProbeg() + ";" + car.getCena() + ";" + car.getCena2() + ";" + carUrl;
+            textToWrite = car.getCarMake() + ";" + car.getMakeModel() + ";" + car.getCarColor() + ";" + car.getPrivod() + ";" + car.getKorobka() + ";" + car.getCarYear() + ";" + car.getTipTopliva() + ";" + car.getObjom() + ";" + car.getProbeg() + ";" + car.getCena() + ";" + car.getCena2() + oksjon + ";" + carUrl;
             System.out.println(textToWrite);
 
         } catch (IOException e) {
