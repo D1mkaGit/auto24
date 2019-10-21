@@ -1,0 +1,44 @@
+AC;Cobra;punane;tagavedu;manuaal;01/1984;bensiin;7.0 427;14 900 km;109 900 EUR;;http://www.auto24.ee/used/2762298
+Acura;Integra;helesinine met.;;manuaal;07/2005;bensiin + gaas (LPG/vedelgaas);2.0;141 000 km;7000 EUR;;http://www.auto24.ee/used/2813058
+Alfa Romeo;147;must met.;esivedu;manuaal;09/2001;bensiin;1.6 16 VALVE TWIN SPARK (88 kW);221 150 km;1750 EUR;799 EUR;http://www.auto24.ee/used/2812049
+Alfa Romeo;156;punane;esivedu;manuaal;12/2001;bensiin;1.6 (88 kW);196 000 km;1200 EUR;899 EUR;http://www.auto24.ee/used/2480177
+Alfa Romeo;156;hõbedane met.;esivedu;automaat;05/2003;bensiin;2.0 (122 kW);163 000 km;999 EUR;;http://www.auto24.ee/used/2608954
+Alfa Romeo;156 Sportwagon;punane;esivedu;manuaal;06/2002;bensiin;2.0 (110 kW);211 000 km;1299 EUR;999 EUR;http://www.auto24.ee/used/2519406
+Alfa Romeo;156;must;esivedu;;02/2001;;2.4 (103 kW);;1000 EUR;;http://www.auto24.ee/used/2563951
+Alfa Romeo;147;hall met.;esivedu;manuaal;04/2002;diisel;1.9 JTD (85 kW);222 000 km;1099 EUR;;http://www.auto24.ee/used/2634583
+Alfa Romeo;147;punane met.;esivedu;manuaal;10/2004;bensiin;2.0 (110 kW);159 000 km;1190 EUR;;http://www.auto24.ee/used/2622439
+Alfa Romeo;147;helesinine;esivedu;manuaal;12/2002;diisel;1.9 (85 kW);218 000 km;1499 EUR;1199 EUR;http://www.auto24.ee/used/2474750
+Alfa Romeo;147;must;esivedu;manuaal;07/2003;diisel;1.9 (85 kW);;1300 EUR;1200 EUR;http://www.auto24.ee/used/2805742
+Alfa Romeo;156;heleroheline met.;esivedu;manuaal;04/2004;bensiin;1.6 TS (88 kW);131 700 km ·;1700 EUR;1200 EUR;http://www.auto24.ee/used/2728339
+Alfa Romeo;147;punane;esivedu;poolautomaat;04/2005;bensiin;2.0 (110 kW);156 900 km;;1300 EUR;http://www.auto24.ee/used/2467622
+Alfa Romeo;156;must;esivedu;manuaal;08/2002;bensiin;2.0 (122 kW);130 000 km;1400 EUR;1300 EUR;http://www.auto24.ee/used/2798376
+Alfa Romeo;156 Sportwagon;kuldne met.;esivedu;manuaal;06/2005;bensiin;2.0 (122 kW);218 000 km;1999 EUR;1799 EUR;http://www.auto24.ee/used/2605677
+Alfa Romeo;156 Sportwagon;must;esivedu;manuaal;08/2002;diisel;2.4 JTD (110 kW);253 000 km;2300 EUR;1900 EUR;http://www.auto24.ee/used/2809138
+Alfa Romeo;166;hõbedane met.;esivedu;automaat;01/2004;diisel;2.4 D (129 kW);227 000 km ·;2190 EUR;;http://www.auto24.ee/used/2370733
+Alfa Romeo;GT;hall met.;esivedu;automaat;12/2004;bensiin;2.0 (122 kW);126 000 km;2199 EUR;;http://www.auto24.ee/used/2745396
+Alfa Romeo;147;sinine;;manuaal;09/2007;bensiin;1.6 (88 kW);;2600 EUR;;http://www.auto24.ee/used/2808091
+Alfa Romeo;GTV;punane;esivedu;manuaal;07/2003;bensiin;2.0 i 16V (110 kW);199 900 km ·;;2600 EUR;http://www.auto24.ee/used/2668567
+Alfa Romeo;166;tumesinine;esivedu;automaat;05/1999;bensiin;3.0 (166 kW);156 021 km;2700 EUR;;http://www.auto24.ee/used/2800374
+Alfa Romeo;GT;hõbedane met.;esivedu;manuaal;02/2004;diisel;1.9 JTD (110 kW);264 296 km ·;3300 EUR;3000 EUR;http://www.auto24.ee/used/2723411
+Alfa Romeo;159;tumehall met.;esivedu;manuaal;2006;diisel;1.9 JTDm (110 kW);213 000 km;3490 EUR;;http://www.auto24.ee/used/2767441
+Alfa Romeo;147;punane;esivedu;poolautomaat (Selespeed);06/2007;bensiin;2.0 R4 (110 kW);91 920 km;3500 EUR;;http://www.auto24.ee/used/2810662
+Alfa Romeo;159;tumepunane met.;esivedu;manuaal (6);11/2007;bensiin;2.2 JTS (136 kW);230 000 km ·;3690 EUR;;http://www.auto24.ee/used/2735726
+Alfa Romeo;159;hall met.;esivedu;manuaal (6 käiku);04/2006;diisel;2.4 JTD (147 kW);218 444 km;4200 EUR;;http://www.auto24.ee/used/2758031
+Alfa Romeo;159;must;esivedu;automaat;01/2008;diisel;1.9 (110 kW);167 000 km;4700 EUR;4300 EUR;http://www.auto24.ee/used/2810278
+Alfa Romeo;159;must met.;esivedu;automaat;01/2007;diisel;2.4 R5 (147 kW);239 000 km;5099 EUR;4999 EUR;http://www.auto24.ee/used/2733857
+Alfa Romeo;Spider;punane;esivedu;manuaal;05/2006;bensiin;2.0 (110 kW);73 097 km;5900 EUR;;http://www.auto24.ee/used/2089029
+Alfa Romeo;Brera;hõbedane;esivedu;manuaal (6käiku);10/2006;bensiin;2.2 (136 kW);123 400 km ·;5990 EUR;;http://www.auto24.ee/used/2802599
+Alfa Romeo;Brera;must;esivedu;manuaal;03/2007;bensiin;2.2 (136 kW);114 000 km;6850 EUR;6490 EUR;http://www.auto24.ee/used/2583371
+Alfa Romeo;159;punane;esivedu;automaat;01/2008;diisel;1.9 JTDM (110 kW);198 890 km ·;6900 EUR;6500 EUR;http://www.auto24.ee/used/2815113
+Alfa Romeo;159;valge;nelikvedu;manuaal (6);03/2009;diisel;2.4 JTDM (154 kW);189 600 km ·;7800 EUR;7000 EUR;http://www.auto24.ee/used/2750045
+Alfa Romeo;159;must;esivedu;poolautomaat (Selespeed);11/2008;bensiin;2.2 JTS (136 kW);227 000 km;;7000 EUR;http://www.auto24.ee/used/2816683
+Alfa Romeo;Brera;beež met. (kuldne);nelikvedu;manuaal;05/2006;bensiin;3.2 V6 24V (191 kW);129 400 km;7500 EUR;;http://www.auto24.ee/used/2473317
+Alfa Romeo;MiTo;punane met.;;manuaal;10/2012;bensiin;0.9 (63 kW);151 229 km ·;8828 EUR;;http://www.auto24.ee/used/2818038
+Alfa Romeo;159;punane met. (Rosso 8C Competozione);esivedu;manuaal;11/2011;diisel;2.0 JTDM 16V;145 000 km ·;10 200 EUR;;http://www.auto24.ee/used/2812140
+Alfa Romeo;Giulietta;punane met. (Rosso Metallizzo);esivedu;manuaal;04/2011;bensiin;1.8 (173 kW);18 006 km ·;16 890 EUR;14 890 EUR;http://www.auto24.ee/used/2733785
+Alfa Romeo;Giulietta;pruun met. (Bronzo Metallizzo);esivedu;automaat (TCT);07/2014;bensiin;1.4 (125 kW);23 663 km ·;15 490 EUR;;http://www.auto24.ee/used/1818896
+Alfa Romeo;Giulietta;must met. (Etna Black);esivedu;automaat (TCT);01/2016;diisel;2.0 JTD (129 kW);20 584 km ·;19 900 EUR;;http://www.auto24.ee/used/2102895
+Alfa Romeo;Giulietta;valge (Perla Moonlight);esivedu;automaat;06/2017;bensiin;1.4 (125 kW);11 937 km ·;20 900 EUR;;http://www.auto24.ee/used/2779631
+Alfa Romeo;Giulia;hall (Lipari Grigio);nelikvedu;automaat (ZF);06/2017;bensiin;2.0 (206 kW);2661 km ·;45 990 EUR;40 990 EUR;http://www.auto24.ee/used/2706794
+Alfa Romeo;Giulia;sinine (Misano Blau);nelikvedu;automaat (8-astmeline ZF);09/2017;bensiin;2.0 (206 kW);8400 km ·;54 089 EUR;41 990 EUR;http://www.auto24.ee/used/2638542
+Alfa Romeo;Stelvio;tumehall (Stromboli Grigio);nelikvedu;automaat (8-astmeline ZF);12/2017;bensiin;2.0 (206 kW);5100 km ·;63 778 EUR;45 900 EUR;http://www.auto24.ee/used/2805780
