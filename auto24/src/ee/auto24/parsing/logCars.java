@@ -24,7 +24,8 @@ public class logCars {
             int modifier = 200;
             try {
                 Document document = Jsoup.connect(url).get();
-                Elements numOfLines = document.select("div:nth-child(3) > div.current-range > span.label > strong");
+                Element numOfLines = document.selectFirst("div.paginator > div.current-range > span.label > strong");
+
                 int intNumberOfLines = Integer.parseInt(numOfLines.text());
                 String makeRowSelecotor = "#usedVehiclesSearchResult > tbody > tr > td.make_and_model > a";
                 Elements makeRow = document.select(makeRowSelecotor);
