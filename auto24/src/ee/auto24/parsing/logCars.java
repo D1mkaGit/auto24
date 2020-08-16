@@ -17,35 +17,40 @@ public class logCars {
     public static List<Car> makeList = new ArrayList<>();
     public static List<String> urlForParceMake = new ArrayList<>();
     public static String urlForParce = "http://www.auto24.ee/kasutatud/nimekiri.php?bn=2&a=101&aj=&ae=2&af=200&ag=0&ag=1&otsi=otsi";
+    private static final String makeRowSelector = "#usedVehiclesSearchResult > tbody > tr > td.make_and_model > a";
+    private static Element numOfLines;
+    private static Elements makeRow;
+    private static Document document;
 
     public static logCars logSelectedMake(List<String> urlForParceMake) {
         urlForParceMake.forEach(urlInList -> {
             String url = urlInList;
             int modifier = 200;
+            int intNumberOfLines;
             try {
-                Document document = Jsoup.connect(url).get();
-                Element numOfLines = document.selectFirst("div.paginator > div.current-range > span.label > strong");
+                document = Jsoup.connect(url).get();
+                intNumberOfLines = getNumberOfLinesInFirstPage();
 
-                int intNumberOfLines = Integer.parseInt(numOfLines.text());
-                String makeRowSelecotor = "#usedVehiclesSearchResult > tbody > tr > td.make_and_model > a";
-                Elements makeRow = document.select(makeRowSelecotor);
-                Logger.logRow(makeRow); //first 200 rows logged there
-
-                if (intNumberOfLines > modifier) {
-                    int countOf = intNumberOfLines / modifier;
-                    for (int m = 1; m <= countOf; m++) {
-                        int startingFrom = modifier * m;
-                        String modifiedUrl = url + "&ak=" + startingFrom;
-                        document = Jsoup.connect(modifiedUrl).get();
-                        makeRow = document.select(makeRowSelecotor);
-                        Logger.logRow(makeRow); // starting from 201 car loging here
-                    }
+                int countOf = intNumberOfLines / modifier;
+                if (countOf < 0) countOf = 1;
+                for (int m = 0; m <= countOf; m++) {
+                    int startingFrom = modifier * m;
+                    String modifiedUrl = url + "&ak=" + startingFrom;
+                    document = Jsoup.connect(modifiedUrl).get();
+                    makeRow = document.select(makeRowSelector);
+                    Logger.logRow(makeRow);
                 }
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
         });
         return null;
+    }
+
+    private static int getNumberOfLinesInFirstPage() {
+        numOfLines = document.selectFirst("div.paginator > div.current-range > span.label > strong");
+        return Integer.parseInt(numOfLines.text());
     }
 
     public static logCars createdMakeList() throws IOException {
