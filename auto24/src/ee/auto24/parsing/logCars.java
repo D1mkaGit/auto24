@@ -17,7 +17,7 @@ public class logCars {
     public static List<Car> makeList = new ArrayList<>();
     public static List<String> urlForParceMake = new ArrayList<>();
     private static final int modifier = 200;
-    private static final String makeRowSelector = "#usedVehiclesSearchResult > tbody > tr > td.make_and_model > a";
+    private static final String makeRowSelector = "#usedVehiclesSearchResult-flex > div.result-row > a";
     public static String urlForTakeMakes = "https://www.auto24.ee/kasutatud/nimekiri.php?bn=2&a=101102&aj=&ae=2&af=" + modifier + "&ag=0&ag=1&otsi=otsi";
     public static String urlForParce = "https://www.auto24.ee/kasutatud/nimekiri.php?bn=2&a=100&aj=&j[]=1&j[]=2&j[]=3&j[]=4&j[]=5&j[]=6&j[]=61&j[]=67&j[]=7&j[]=8&j[]=9&j[]=10&j[]=11&ae=2&af=" + modifier + "&ag=0&ag=1&otsi=otsi";
     private static Element numOfLines;
